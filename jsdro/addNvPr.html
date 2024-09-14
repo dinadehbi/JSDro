@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Nouveaux Produits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face{
+            font-family: 'Jost';
+            src: url('/jost-3/Jost-Regular.ttf');
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Jost';
+        }
+        h1{
+            font-size: 50px;
+            font-weight: bolder;
+            color: #252B9A;
+        }
+        section{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button{
+            border: 2px solid #C0E7FF;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .addcontainer{
+            border: 2px solid transparent;
+            height: 100px;
+            width: 100px;
+        }
+        #iconAdd{
+            color: #C0E7FF;
+            font-size: 50px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Add Nouveaux Produits</h1><br><br><br>
+        <button id="add">
+            <div class="addcontainer">
+                <i class="fa-solid fa-plus" id="iconAdd"></i>
+            </div>
+        </button>
+    </section>
+    <script>
+        let add = document.getElementById('add');
+        add.addEventListener('click', function(){
+            window.location.href = "NvPr.html";
+        });
+    </script>
+</body>
+</html>

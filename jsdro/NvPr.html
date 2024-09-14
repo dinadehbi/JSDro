@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveaux Produits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+          @font-face{
+            font-family: 'Jost';
+            src: url('/jost-3/Jost-Regular.ttf');
+        }
+       
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Jost';
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form{
+            height: 70%;
+            width: 40%;
+            border: 2px solid #C0E7FF;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #iconImg{
+            font-size: 120px;
+            color: #C0E7FF;
+        }
+        input{
+            border: 2px solid #252B9A;
+            width: 70%;
+            height: 8%;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+        button{
+            background-color: #FF9900;
+            color: black;
+            height: 8%;
+            width: 25%;
+            border-radius: 30px;
+            border: 2px solid #252B9A;
+        }
+        button:hover{
+            background-color: #252B9A;
+            border: 2px solid #FF9900;
+            color: white;
+        }
+     
+        i{
+            font-size: 150px;
+            color: #252B9A;
+        }
+        h1{
+         color: #FF9900;
+         font-size: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Nouveaux Produits</h1><br>
+
+    <form action="" method="post" enctype="multipart/form-data" id="NvPrForm">
+        <i class="fa-regular fa-image" id="imageIcon" style="cursor:pointer;"></i> <br> <br>
+        <input type="file" id="fileInput" name="productImage" accept="image/*" style="display:none;">
+        <input type="text" name="productName" placeholder="Le Nom De Produits" required><br><br>
+        <input type="text" name="productPrice" placeholder="Le prix en DH" required><br><br>
+        <button type="submit" id="NvSendButton" name="EnvoyerNvPr">Envoyer</button>
+    </form>
+
+   <script src="backand.js"></script>
+</body>
+</html>

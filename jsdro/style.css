@@ -1,0 +1,217 @@
+
+@font-face{
+    font-family: 'Jost';
+    src: url('/jost-3/Jost-Regular.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost';
+}
+*::-webkit-scrollbar{
+    width: 0;
+}
+button{
+    cursor: pointer;
+}
+li{
+    cursor: pointer;
+
+}
+
+
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    height: 100px;
+    width: 120px;
+}
+nav{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-weight: 600;
+    position: relative;
+}
+nav li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #252B9A;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: 0.5s;
+}
+li:hover::after{
+    width: 100%;
+}
+#Loginbtn{
+    background-color: #FF9900;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: #252B9A;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+.Acueilpara{
+    height: 550px;
+    width: 50%;
+    background-image: url(shape1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Acueilpara button{
+    background-color: #000000;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+.Acueilpara h1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.Acueilpara p{
+    font-size: 20px;
+}
+.Acueilpara button,p,h1{
+    margin-right: 80px;
+}
+.drog-man-img{
+    height: 400px;
+    width: 700px;
+}
+.section2{
+    font-size: 50px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.blueH1{
+  color: #252B9A;
+  font-weight: bolder;
+}
+.con1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+}
+.con1 img{
+    height: 250px;
+    width: 300px;
+
+}
+.para{
+    font-size: 20px;
+    font-weight: 300;
+}
+.con2{
+    text-align: center;
+}
+.container{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.con3{
+    text-align: center;
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+.produitsdedro{
+    height: 300px;
+    width: 30%;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+.section3{
+    height: 300vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section3 h1{
+    font-size: 70px;
+    font-weight: bolder;
+    margin-top: 100px;
+    margin-left: 20px;
+   
+}
+.background1{
+  
+    height: auto;
+    width: 100vw;
+    background-image: url('Rectangle\ nouveux\ produit.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+  .VoirPlus{
+    background-color: #180AFB;
+    border-radius: 30px;
+    height: 40px;
+    width: 180px;
+    color: white;
+    border: none;
+    font-weight: bold;
+
+  }
+  .aside1{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+.localitationSection{
+    background-color: red;
+    height: 900px;
+    width: 100%;
+}
+  
